@@ -17,7 +17,6 @@ AUTHOR_SAVE_AS = False
 CATEGORY_SAVE_AS = False
 PAGE_URL = '{slug}'
 PAGE_SAVE_AS = '{slug}.html'
-TAG_URL = 'tag/{slug}'
 
 THEME = 'theme'
 

@@ -10,6 +10,7 @@ I was trying to upgrade my dad's phone the other day, from an old iPhone 4 to a 
 
 Something seems to be missing here. How do I get to the next page? I refreshed the page a few times and it was still missing. Naturally, I  opened up the developer console and looked at the source. I found the form element, the inputs for all the credit card info and the customer agreement, but no submit or button of any sort. They weren't hidden, they simply didn't exist. What I did find, however, was a Javascript error:
 
+    :::text
     TypeError: Cannot call method 'init' of undefined
 
 And here is the relevant code:

@@ -5,6 +5,7 @@ PELICANOPTS=
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/output
+DEPLOYDIR=/var/www/pelican
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
@@ -83,6 +84,9 @@ stopserver:
 publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
+deploy: publish
+	sudo cp -r $(OUTPUTDIR)/* $(DEPLOYDIR)
+
 ssh_upload: publish
 	scp -P $(SSH_PORT) -r $(OUTPUTDIR)/* $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
 
@@ -105,4 +109,4 @@ github: publish
 	ghp-import $(OUTPUTDIR)
 	git push origin gh-pages
 
-.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
+.PHONY: html help clean regenerate serve devserver publish deploy ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
