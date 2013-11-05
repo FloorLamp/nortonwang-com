@@ -4,6 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
+    {% block meta %}
+    <meta name="description" content="Norton Wang - Technologist and software developer">
+    <meta property="og:image" content="{{ SITEURL }}/images/me.png">
+    {% endblock %}
     <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" />
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
     <link rel="shortcut icon" href="{{ SITEURL }}/images/favicon.ico">

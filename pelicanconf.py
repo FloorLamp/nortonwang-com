@@ -34,3 +34,6 @@ DEFAULT_PAGINATION = 10
 # RELATIVE_URLS = True
 
 MD_EXTENSIONS = ['codehilite(css_class=codehilite)']
+
+#PLUGIN_PATH = 'home/wang/pelican-description'
+#PLUGINS = ['description']
