@@ -3,7 +3,7 @@ Date: 2013-07-10 12:34
 
 <div class="profile">
     <img alt="Yup, that's me" src="{filename}/images/me.png" class="profile-picture"><div class="divider"></div>
-    <p>Hello, my name is Norton Wang. I'm a graduate of Cornell University, where I studied Computer Science. I'm a full stack web developer, and I enjoy doing Python, Node.js, and Scala work. I do freelance work - if you're interested, feel free to contact me. My email and social links are at the bottom.</p>
+    <p>Hello, my name is Norton Wang. I'm a graduate of Cornell University, where I studied Computer Science. I'm a full stack web developer, and I enjoy working with Python, Node.js, and Scala. I do freelance work - if you're interested, feel free to contact me. My email and social links are at the bottom.</p>
 </div>
 
 # Portfolio

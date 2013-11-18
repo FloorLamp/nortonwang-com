@@ -107,12 +107,21 @@ pre {
 	border-radius: 5px;
 	overflow: auto;
 	font-family: Consolas,Menlo,"Courier New",monospace;
+    line-height: 22px;
+}
+code {
+    background-color: #FAF6E8;
+    padding: 2px 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: auto;
+    font-family: Consolas,Menlo,"Courier New",monospace;
 }
 
 /* Quotes */
 blockquote {
-    margin: 20px;
-    font-style: italic;
+    border-left: 5px solid #6ACEEB;
+    padding-left: 15px;
 }
 cite {}
 
@@ -222,7 +231,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
     vertical-align: middle;
     max-width: 100%;
 }
-@media screen and (max-width: 760px) and (min-width: 500px) {
+@media screen and (max-width: 800px) and (min-width: 500px) {
     .profile .profile-picture {
         width: 20%;
     }
@@ -282,7 +291,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 #content {
 	margin-bottom: 2em;
 	overflow: hidden;
-	width: 760px;
+	width: 800px;
     max-width: 100%;
 	border-radius: 10px;
 	-moz-border-radius: 10px;
