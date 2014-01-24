@@ -45,12 +45,12 @@ hr { border: 2px solid #EEEEEE; }
 /* Anchors */
 a {outline: 0;}
 a img {border: 0px; text-decoration: none;}
-h1 a, h2 a {
-    text-decoration: none !important;
+h1 a, h2 a, h3 a {
+  text-decoration: none !important;
 	text-shadow: none;
-    transition: text-shadow .5s;
+  transition: text-shadow .5s;
 }
-h1 a:hover, h2 a:hover {
+h1 a:hover, h2 a:hover, h3 a:hover {
 	text-shadow: 0 0 1px #FF434C;
     transition: text-shadow .5s;
 }
@@ -59,7 +59,7 @@ a:link, a:visited {
 	padding: 0 1px;
 	text-decoration: underline;
 }
-	
+
 /* Paragraphs */
 div.line-block,
 p { margin-top: 1em;
