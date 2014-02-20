@@ -6,11 +6,11 @@
     <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
     {% block meta %}
     <meta name="description" content="Norton Wang - Technologist and software developer">
-    <meta property="og:image" content="{{ SITEURL }}/images/me.png">
+    <meta property="og:image" content="/images/me.png">
     {% endblock %}
-    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" />
+    <link rel="stylesheet" href="/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" />
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
-    <link rel="shortcut icon" href="{{ SITEURL }}/images/favicon.ico">
+    <link rel="shortcut icon" href="/images/favicon.ico">
     <!--[if IE]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -20,10 +20,10 @@
 {% include 'github.html' %}
     <div id="wrapper">
         <header id="banner" class="body">
-            <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
+            <h1><a href="/">{{ SITENAME }}</a></h1>
             <br/><nav><ul>
             {% for pg in PAGES %}
-                <li{% if pg == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a></li>
+                <li{% if pg == page %} class="active"{% endif %}><a href="/{{ pg.url }}">{{ pg.title }}</a></li>
             {% endfor %}
             </ul></nav>
         </header>
